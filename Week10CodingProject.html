@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 Coding Project</title><!--Week 10 coding project Vehicle sales lot-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"><!--here is my style sheet-->
+</head>
+<body>
+    <div class="container-fluid text-center text-capitalize">
+        <h1>Vehicel Input Data Portal</h1> <!--here I am using the form to create a vehicle inventory like a vehicle inventory sales lot.--> 
+    </div>
+    <div class ="container p-4 bg-primary">
+    
+    <div class="card"><!--this is my form-->
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="newYear">Year</label>
+                            <input type="text" class="form-control" id="newYear" placeholder="Year of Vehicle">
+                    </div>
+                </div>
+                <div class="col-sm"><!--here we have the cost of vehicle-->
+                    <div class="form-group">
+                        <label for="newCost">Cost</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                    <input type="text" class="form-control" aria-label="Dollar amount" id="newCost">
+                            </div>
+                    </div>
+                </div>
+            
+                    <div class="col-sm"><!--here we have model of vehicle-->
+                        <div class="form-group">
+                            <label for="newModel">Model</label>
+                                <input type="text" class="form-control" id="newModel" placeholder="Model of Vehicle">
+                        </div>
+                    </div>
+            </div>
+            <div class="row"><!--here we have mileage of vehicle-->
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="newMileage">Mileage</label>
+                            <input type="text" class="form-control" id="newMileage" placeholder="Mileage of Vehicle">
+                    </div>
+                </div>
+                <div class="col-sm"><!--here we have the color of vehicle-->
+                    <div class="form-group">
+                        <label for="newColor">Color</label>
+                            <div class="input-group mb-3">
+                                 <class="input-group-text">
+                                    <input type="text" class="form-control" id="newColor">
+                            </div>
+                    </div>
+                </div>
+            
+                    <div class="col-sm"><!--here we have make of vehicle-->
+                        <div class="form-group">
+                            <label for="newMake">Make</label>
+                                <input type="text" class="form-control" id="newMake" placeholder="Make of Vehicle">
+                        </div>
+                    </div>
+            </div>
+        
+    </div>
+        <button id="submit" class="btn btn-dark p-2 from-control">Submit</button><!--here we insert our submit button-->
+            </div>
+        </div>
+    </div>
+    <div class="container p-2"><!--This is my table-->
+        <table id="list" class="table">
+            <tr>
+                <td class="table-danger">Year</td><!--here we used bootstrap to highlight Year pink-->
+                <th>Cost</th>
+                <th>Model</th>
+                <th>Mileage</th>
+                <th>Color</th>
+                <th>Make</th>
+            </tr>
+        </table>
+    </div>
+        
+    </div><!--required script-->
+    <script src="script.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
